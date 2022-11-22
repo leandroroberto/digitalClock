@@ -23,10 +23,11 @@ function relogio() {
         seconds.textContent = "0" + secondsNow
     }
 
-    let day = new Date().getDay()
+    let dayWeek = new Date().getDay()
+    let dayMonth = new Date().getDate()
     let month = new Date().getMonth()
     let year = new Date().getFullYear()
-    data.textContent = `${weekDay[day]} dia ${new Date().getDate()} de ${monthNames[month]} de ${year}`
+    data.textContent = `${weekDay[dayWeek]} dia ${dayMonth} de ${monthNames[month]} de ${year}`
 
 }
 
